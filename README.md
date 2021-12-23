@@ -51,12 +51,11 @@ The Online Game Store service offers four REST endpoints:
 
 *curl --location --request GET 'http://localhost:9000/seller/:sellerId'*
 
--   Add a game to the seller:* *
+-   Add a game to the seller:
 
-    curl --location --request POST
-    'http://localhost:9000/seller/:sellerId/games/create' \\
-
---header 'Content-Type: application/json' \\
+    *curl --location --request POST
+    'http://localhost:9000/seller/:sellerId/games/create'
+--header 'Content-Type: application/json'* \\
 
 --data-raw '{
 
@@ -75,9 +74,8 @@ The Online Game Store service offers four REST endpoints:
 
 -   Update the game from the seller:
 
-<!-- -->
-
---header 'Content-Type: application/json' \\
+*curl --location --request PATCH 'http://localhost:9000/seller/:sellerId/games/:gameId/update' \
+--header 'Content-Type: application/json'* \\
 
 --data-raw '{
 
