@@ -3,7 +3,7 @@ Online Game Store
 
 This application is a simple Online Game Store consisting “seller”
 entities and their game collections built with **Lagom** showcasing the
-principles of** Event Sourcing** and** CQRS**. It is a single service
+principles of **Event Sourcing** and **CQRS**. It is a single service
 containing two parts; API and Implementation handling the management of
 the store by providing create,read,update and delete **(CRUD)**
 functions for Sellers and Games.
